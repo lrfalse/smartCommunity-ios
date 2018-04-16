@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="xQj-wW-CFW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LLNavView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="去逛逛" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt7-fE-ZEB">
+                    <rect key="frame" x="221" y="19" width="146" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="RRt-cl-sho"/>
+                        <constraint firstAttribute="height" constant="45" id="Tfk-5L-xrE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wa-b2-osI">
+                    <rect key="frame" x="3" y="20" width="70" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="JLa-fN-Lth"/>
+                    </constraints>
+                    <state key="normal" image="fanhui"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vt7-fE-ZEB" secondAttribute="bottom" id="0be-2f-eJJ"/>
+                <constraint firstItem="1wa-b2-osI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="3" id="hHP-M3-ijb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1wa-b2-osI" secondAttribute="bottom" id="t1S-zg-VlI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vt7-fE-ZEB" secondAttribute="trailing" constant="8" id="vsT-f8-7qG"/>
+                <constraint firstItem="1wa-b2-osI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="zow-AQ-cVD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backBtn" destination="1wa-b2-osI" id="E7q-Rt-4qx"/>
+                <outlet property="titleLB" destination="vt7-fE-ZEB" id="mmh-3G-UN7"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fanhui" width="17" height="17"/>
+    </resources>
+</document>
